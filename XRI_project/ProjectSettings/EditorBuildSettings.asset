@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Hands.unity
+    guid: bd3ffee49ff9fe14695a98a22b8d136c
   - enabled: 1
-    path: Assets/Scenes/ArcheryPassthrough.unity
-    guid: 5790bc74d148bb74a81eef678be04a7c
+    path: Assets/Scenes/TheCabin.unity
+    guid: 1d94d79e88ba96e419646e6ff93538e9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b14da25d4039c044d994895b2afe8e98, type: 2}
