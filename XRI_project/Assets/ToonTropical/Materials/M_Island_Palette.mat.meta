@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 36b98e9962cf64d4ca60dbf26f4ee2be
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 421052
+  packageName: 'Toon Tropical Lite: Free Stylized Island Starter'
+  packageVersion: 1.0.0
+  assetPath: Assets/ToonTropical/Materials/M_Island_Palette.mat
+  uploadId: 1030212

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 29147775e57e07e4c862f0f2d8d26623
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 421052
+  packageName: 'Toon Tropical Lite: Free Stylized Island Starter'
+  packageVersion: 1.0.0
+  assetPath: Assets/ToonTropical/Shaders/ToonTropical_Outline.shader
+  uploadId: 1030212

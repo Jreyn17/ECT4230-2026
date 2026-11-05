@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c5a8c0eea705b724cb637d99a01d1dcf
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 421052
+  packageName: 'Toon Tropical Lite: Free Stylized Island Starter'
+  packageVersion: 1.0.0
+  assetPath: Assets/ToonTropical/Scripts/ToonTropical.Runtime.asmdef
+  uploadId: 1030212

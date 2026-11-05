@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b3a5a5a4d494ad2429e891058b2a4419
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 421052
+  packageName: 'Toon Tropical Lite: Free Stylized Island Starter'
+  packageVersion: 1.0.0
+  assetPath: Assets/ToonTropical/Shaders/ToonTropical_Sky.shader
+  uploadId: 1030212

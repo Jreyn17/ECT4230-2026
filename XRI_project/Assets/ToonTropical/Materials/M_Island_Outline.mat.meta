@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4681e192e6f68cc45bf9d0f0849b0499
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 421052
+  packageName: 'Toon Tropical Lite: Free Stylized Island Starter'
+  packageVersion: 1.0.0
+  assetPath: Assets/ToonTropical/Materials/M_Island_Outline.mat
+  uploadId: 1030212

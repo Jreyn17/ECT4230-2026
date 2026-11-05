@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c9bb0028ae56c32468cb3cae56039595
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 421052
+  packageName: 'Toon Tropical Lite: Free Stylized Island Starter'
+  packageVersion: 1.0.0
+  assetPath: Assets/ToonTropical/Shaders/ToonTropical_Common.hlsl
+  uploadId: 1030212

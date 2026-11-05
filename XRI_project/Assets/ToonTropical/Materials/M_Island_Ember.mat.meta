@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c4bd600192edaca4b81e36b76119a9ba
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 421052
+  packageName: 'Toon Tropical Lite: Free Stylized Island Starter'
+  packageVersion: 1.0.0
+  assetPath: Assets/ToonTropical/Materials/M_Island_Ember.mat
+  uploadId: 1030212

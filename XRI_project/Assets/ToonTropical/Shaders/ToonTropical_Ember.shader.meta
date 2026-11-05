@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2d54f03f48bec4746b11f47d113a64ee
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 421052
+  packageName: 'Toon Tropical Lite: Free Stylized Island Starter'
+  packageVersion: 1.0.0
+  assetPath: Assets/ToonTropical/Shaders/ToonTropical_Ember.shader
+  uploadId: 1030212
