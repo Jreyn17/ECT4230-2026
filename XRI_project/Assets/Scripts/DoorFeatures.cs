@@ -1,33 +1,43 @@
+using JetBrains.Annotations;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class DoorFeatures : CoreFeatures
 {
+
     [Header("Door Configurations")]
+    [SerializeField]
+    private Transform doorPivot; //Pivot control
 
-    [SerializeField] private Transform doorPivot;
+    [SerializeField]
+    private float maxAngle = 90.0f; //Current guess of maxAngle
 
-    [SerializeField] private float maxAngle = 90.0f;
+    [SerializeField]
+    private float doorSpeed = 1.0f;
 
-    [SerializeField] private float doorSpeed = 20.0f;
+    [SerializeField]
+    private bool reverseAngleDirection = false;
 
-    [SerializeField] private bool reverseAngleDirection = false;
+    [SerializeField]
+    private bool doorOpen = false;
 
-    [SerializeField] private bool doorOpen = false;
+    [SerializeField]
+    private bool MakeKinematicOnOpen = false;
 
-    [SerializeField] private bool MakeKinematicOnOpen = false;
+    [Header("Interations Configurations")]
 
-    [Header("Interactions Configurations")]
+    [SerializeField]
+    private XRSocketInteractor socketInteractor; //Triggered by "Events"
 
-    [SerializeField] private XRSocketInteractor socketInteractor;
-
-    [SerializeField] private XRSimpleInteractable simpleInteractable;
+    [SerializeField]
+    private XRSimpleInteractable simpleInteractable;
 
     private void Start()
     {
-        //When a key getes close to a socket, add a listener
+        //When a key get close to a socket, add a listener
         //s = Select Enter or Exit
 
         socketInteractor?.selectEntered.AddListener((s) =>
@@ -44,14 +54,12 @@ public class DoorFeatures : CoreFeatures
         simpleInteractable?.selectEntered.AddListener((s) =>
         {
             OpenDoor();
-
         });
     }
-
     public void OpenDoor()
     {
-        //If the door is not open, Play OnStart sound
-        
+        // If the door is not Open, Play OnStart sound
+     
         if (!doorOpen)
         {
             PlayOnStart();
@@ -66,25 +74,27 @@ public class DoorFeatures : CoreFeatures
 
         while (doorOpen)
         {
+
             var angle = doorPivot.localEulerAngles.y < 180 ? doorPivot.localEulerAngles.y : doorPivot.localEulerAngles.y - 360;
 
             angle = reverseAngleDirection ? Mathf.Abs(angle) : angle;
 
-            if (angle <= maxAngle)
+            if(angle <= maxAngle)
             {
                 doorPivot?.Rotate(Vector3.up, doorSpeed * Time.deltaTime * (reverseAngleDirection ? -1 : 1));
             }
+
+            //When done, turn off Rigidbody
             else
             {
-                //When finished, turn off the Rigidbody so no collisions can occur.
                 doorOpen = false;
                 var featureRigidbody = GetComponent<Rigidbody>();
-
-                if (featureRigidbody != null && MakeKinematicOnOpen) 
-                    featureRigidbody.isKinematic = true;
+                if (featureRigidbody != null && MakeKinematicOnOpen) featureRigidbody.isKinematic = true;
             }
 
             yield return null;
+
         }
     }
 }
+
